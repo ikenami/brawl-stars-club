@@ -45,6 +45,6 @@ func GetClub(w http.ResponseWriter, req *http.Request) {
 
 func printLeaderboard(players []entity.RaceMember) {
 	for i, player := range players {
-		fmt.Printf("%v ) %v : \t%v \t(%v)\n", i + 1, player.Name, player.DeltaTrophies, player.CurrentTrophies)
+		fmt.Printf("%v ) %v : %v troféis (atual: %v)\n", i + 1, player.Name, player.DeltaTrophies, player.CurrentTrophies)
 	}
 }
